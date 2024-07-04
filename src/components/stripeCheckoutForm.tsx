@@ -1,6 +1,6 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useState } from "react";
- 
+
 export const StripeCheckoutForm = () => {
     const stripe = useStripe();
     const elements = useElements();
@@ -47,7 +47,7 @@ export const StripeCheckoutForm = () => {
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-lg-6">
-                <h1 className="mb-5">Stripe Test Payment</h1>
+                    <h1 className="mb-5">Stripe Test Payment</h1>
                     <form onSubmit={handleSubmit}>
                         <CardElement className="form-control" />
                         <button type="submit" className="btn btn-primary mt-4 float-end" disabled={!stripe}>
