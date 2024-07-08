@@ -23,7 +23,7 @@ export const StripeCheckoutForm = () => {
             return;
         }
 
-        try {
+        try { 
             const { error, paymentMethod } = await stripe.createPaymentMethod({
                 type: "card",
                 card: cardElement,
